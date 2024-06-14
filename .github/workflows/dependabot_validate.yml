@@ -2,11 +2,12 @@
 name: dependabot validate
 
 "on":
-  workflow_call:
   pull_request:
     paths:
       - ".github/dependabot.yml"
       - ".github/workflows/dependabot_validate.yml"
+  workflow_call:
+  workflow_dispatch:
 
 jobs:
   validate:
