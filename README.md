@@ -1,7 +1,8 @@
 # workflows
 
-[![dependabot status](https://github.com/docker-alw/workflows/actions/workflows/dependabot_validate.yml/badge.svg)](https://github.com/docker-alw/workflows/actions/workflows/dependabot_validate.yml)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/docker-alw/workflows/main.svg)](https://results.pre-commit.ci/latest/github/docker-alw/workflows/main)
+[![dependabot update](https://github.com/docker-alw/workflows/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/docker-alw/workflows/actions/workflows/dependabot/dependabot-updates)
+[![dependabot validate](https://github.com/docker-alw/workflows/actions/workflows/dependabot_validate.yml/badge.svg)](https://github.com/docker-alw/workflows/actions/workflows/dependabot_validate.yml)
 
 
 This repository contains workflow templates to be imported by other repositories.
