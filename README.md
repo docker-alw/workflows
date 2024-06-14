@@ -10,5 +10,31 @@ This repository contains workflow templates to be imported by other repositories
 
 Available templates are:
 
-* `docker-alw/workflows/.github/workflows/build_image.yml`: build and push docker images to ghcr.io
-* `docker-alw/workflows/.github/workflows/dependabot_validate.yml`: run dependabot
+* `docker-alw/workflows/.github/workflows/build_image.yml@v0`: build and push docker images to ghcr.io
+* `docker-alw/workflows/.github/workflows/dependabot_validate.yml@v0`: run dependabot
+
+## Usage
+
+To use the provided templates just create a workflow file with following content:
+
+Example for build-image:
+
+```yaml
+jobs:
+  build-push:
+    name: Build-Push
+    permissions:
+      actions: read
+      packages: write
+    uses: docker-alw/workflows/.github/workflows/build_image.yml@v0
+```
+
+Example for dependabot:
+
+```yaml
+jobs:
+  validate:
+    permissions:
+      pull-requests: write
+    uses: docker-alw/workflows/.github/workflows/dependabot_validate.yml@v0
+```
