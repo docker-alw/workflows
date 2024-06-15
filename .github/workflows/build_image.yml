@@ -62,7 +62,7 @@ jobs:
       - name: Test Script
         run: |
           echo "testing $FULL_IMAGE_URL"
-          docker run --rm "$FULL_IMAGE_URL" "/test.sh"
+          docker run --rm --entrypoint "/test.sh" "$FULL_IMAGE_URL"
         env:
           FULL_IMAGE_URL: ${{ steps.meta.outputs.tags }}
 
