@@ -51,7 +51,7 @@ jobs:
             org.opencontainers.image.description=Base PHP image with dependencies for Nextcloud
 
       - name: Build and Load
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
           load: true
@@ -78,7 +78,7 @@ jobs:
           hide-progress: true
 
       - name: Build and Push
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
           platforms: ${{ env.PLATFORMS }}
